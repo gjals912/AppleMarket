@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="my" parent="@android:style/Widget.TextView">
+    <item name="fontFamily">@font/notosanskr_bold</item>
+    <item name="android:lineSpacingExtra">0sp</item>
+    <item name="android:textSize">15sp</item>
+    <item name="android:textColor">@color/black</item>
+
+</style></resources>

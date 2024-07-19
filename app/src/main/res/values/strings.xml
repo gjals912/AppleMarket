@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Apple Market</string>
+    <string name="name">사과</string>
+    <string name="title">내배캠동</string>
+    <string name="today">오늘의 사과!</string>
+    <string name="Description">다양한 중고품을 만나보세요</string>
+    <string name="contents_title">당근</string>
+    <string name="contents_sub_title">당근당근</string>
+    <string name="contents_user_name">토끼</string>
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    android:background="#F6F6F6"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/iv_main"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/iv_profill"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="fitStart"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_main"
+        android:src="@drawable/iv_profill"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
+        android:fontFamily="@font/notosanskr_bold"
+        android:text="@string/contents_title"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="10dp"
+        style="@style/my"
+        android:layout_marginBottom="13dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/iv_profill"
+        app:layout_constraintTop_toTopOf="@+id/iv_profill" />
+
+    <TextView
+        android:id="@+id/tv_sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
+        android:fontFamily="@font/notosanskr_regular"
+        android:text="@string/contents_sub_title"
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"/>
+
+    <TextView
+        android:id="@+id/tv_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notosanskr_regular"
+        android:text="@string/contents_user_name"
+        android:layout_marginTop="-10dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_sub_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sub_title"
+        tools:ignore="SmallSp" />
+
+    <Button
+        android:id="@+id/btn_user_keyword"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_marginVertical="30dp"
+        android:background="@drawable/round_button"
+        android:fontFamily="@font/notosanskr_bold"
+        android:text="@string/name"
+        android:textColor="@color/white"
+        android:textSize="9sp"
+        app:layout_constraintStart_toStartOf="@+id/iv_profill"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sub_title"
+        tools:ignore="SmallSp,TouchTargetSizeCheck,TextSizeCheck" />
+
+    <Button
+        android:id="@+id/btn_user_keyword2"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/round_button"
+        android:fontFamily="@font/notosanskr_bold"
+        android:text="@string/name"
+        android:textColor="@color/white"
+        android:textSize="9sp"
+        app:layout_constraintStart_toEndOf="@+id/btn_user_keyword"
+        app:layout_constraintTop_toTopOf="@+id/btn_user_keyword"
+        tools:ignore="SmallSp,TouchTargetSizeCheck,TextSizeCheck" />
+
+    <Button
+        android:id="@+id/btn_user_keyword3"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/round_button"
+        android:fontFamily="@font/notosanskr_bold"
+        android:text="@string/name"
+        android:textColor="@color/white"
+        android:textSize="9sp"
+        app:layout_constraintStart_toEndOf="@+id/btn_user_keyword2"
+        app:layout_constraintTop_toTopOf="@+id/btn_user_keyword2"
+        tools:ignore="SmallSp,TouchTargetSizeCheck,TextSizeCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>
